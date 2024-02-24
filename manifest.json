@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Extension",
+  "description": "An extension made to show the current weather in location",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Latest Weather"
+  }
+}
