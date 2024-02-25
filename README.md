@@ -2,7 +2,7 @@
 This project is a weather extension for Fullyhack, designed to provide a real-time weather update. It's built using HTML, CSS, and Javascript, and leverages the power of WeatherAPI to fetch the latest weather data. 
 The extension is designed to be lightweight and easy to use under the neon theme of the event. It provides a simple and intuitive interface for users to check the current weather conditions. It displays key information such as temperature, humidity, wind speed, visibility, and UV in real-time.
 ## Installation
-1. Clone the repository or download the extension files from this repository. You can also use the command below on your terminal:
+1. Clone the repository or download the extension files from this repository. You can also use the command below for your terminal:
    
     `git clone https://github.com/Fullyhacks2024/Fullyhacks_Project.git`
 
