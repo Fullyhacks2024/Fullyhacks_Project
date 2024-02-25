@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         "Pressure MB": data.current.pressure_mb,
                         "Pressure IN": data.current.pressure_in,
                         Humidity: data.current.humidity,
-                        cloud: data.current.cloud,
+                        "Chance of Clouds": data.current.cloud,
                         "Feels like (Celsius)": data.current.feelslike_c,
                         "Feels like (Fahrenheit)": data.current.feelslike_f,
                         "Visibility KM": data.current.vis_km,
