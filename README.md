@@ -18,7 +18,7 @@ Using the Weather Extension is simple and straightforward:
 2. After entering the city name, click on the **Fetch Weather Data** button. The extension will then fetch the current weather conditions for the specified city and display them in the popup window.
 
 ## Contributing
-Kush Patel - kushpatel125@csu.fullerton.edu
+Kush Patel - kushpate125@csu.fullerton.edu
 
 Rey Urquiza - reiiurquiza@gmail.com
 
