@@ -4,12 +4,11 @@ body {
     background-color: rgb(0, 0, 0);
     color: white;
     text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 82px #FF10F0,
-            0 0 92px #FF10F0,
-            0 0 102px #FF10F0,
-            0 0 151px #FF10F0
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 20px #FF10F0,
+        0 0 40px #FF10F0,
+        0 0 80px #FF10F0;
 }
 
 .container {
@@ -22,6 +21,40 @@ body {
 
 #city-input, #forecast-days, #fetch-button {
     margin: 10px 0;
+}
+
+#city-input {
+    border: 2px solid #FF10F0;
+    border-radius: 7px;
+    color: white
+    background-color: black
+}
+#city-input:focus {
+    outline: none;
+    border-color: #FF10F0;
+    box-shadow: 0 0 10px #FF10F0;
+}
+
+#fetch-button {
+  border: 1px solid #FF10F0;
+  background-color: rgb(0, 0, 0);
+  color: #FF10F0;
+  box-shadow: 0 0 10px #FF10F0, 0 0 10px #FF10F0 inset;
+  transition: all 0.3s ease;
+}
+#fetch-button:hover{
+   text-shadow:
+    0 0 20px #fff,
+    0 0 50px rgba(255, 16, 240, .9),
+    0 0 75px rgba(255, 16, 240, .8),
+    0 0 76px rgba(255, 16, 240, .7),
+    0 0 77px rgba(255, 16, 240, .6),
+    0 0 78px rgba(255, 16, 240, .5),
+    0 0 79px rgba(255, 16, 240, .4),
+    0 0 80px rgba(255, 16, 240, .3),
+    0 0 85px rgba(255, 16, 240, .2),
+    0 0 99px rgba(255, 16, 240, .1),
+    0 0 150px #fff;
 }
 
 #weather-info {
