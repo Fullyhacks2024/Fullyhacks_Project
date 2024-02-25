@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 const weatherInfoElement = document.getElementById('weather-data');
                 weatherInfoElement.textContent = allWeatherInfoStr;
                 // Convert dictionary to formatted JSON string
+                
+                let weatherIcon = document.getElementById("weather-icon")
+                let imageName = weatherDictionary.condition.Weather.toLowerCase().replace(/\s/g, "");
+                let image = document.createElement("img");
+                image.src = "./Icons/" + imageName + ".jpg";
+                weatherIcon.appendChild(image);
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
