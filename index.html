@@ -7,7 +7,14 @@
 
 </head>
 <body>
-Hello
-<script src ="script.js" defer> </script> <!-- connects to script.js  -->
+    <div>
+        <h1>Current Weather</h1>
+        <input  type="text" id="city" placeholder="Please enter the city: ">
+        <button onclick="getWeather()">Find</button>
+        <img id="weather-image">
+        <div id="current-info"> </div>
+    </div>
+    
+    <script src ="script.js" defer> </script> <!-- connects to script.js  -->
 </body>
 </html>
