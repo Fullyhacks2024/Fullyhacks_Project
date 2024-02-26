@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         Country: data.location.country
                     },
                     condition:{
-                        Weather: data.current.condition.text
+                        Weather: " " + data.current.condition.text
                     },
                     current: {
                         Celsius: data.current.temp_c,
@@ -37,19 +37,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 };
 
                 let allWeatherInfoStr = JSON.stringify(weatherDictionary.location, null, 2) +
-                    JSON.stringify(weatherDictionary.condition, null, 2) +
+                    JSON.stringify(weatherDictionary.condition, null, 0) +
                     JSON.stringify(weatherDictionary.current, null, 2);
                 allWeatherInfoStr = allWeatherInfoStr.replace(/[{}"']/g, '');
 
                 const weatherInfoElement = document.getElementById('weather-data');
                 weatherInfoElement.textContent = allWeatherInfoStr;
-                // Convert dictionary to formatted JSON string
-                
+
+
                 let weatherIcon = document.getElementById("weather-icon")
-                let imageName = weatherDictionary.condition.Weather.toLowerCase().replace(/\s/g, "");
-                let image = document.createElement("img");
-                image.src = "./Icons/" + imageName + ".jpg";
-                weatherIcon.appendChild(image);
+                let imageName = "./Icons/" + weatherDictionary.condition.Weather.toLowerCase().replace(/\s/g, "") + ".jpg";
+                weatherIcon.innerHTML =  `<img src =${imageName}  />`
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
