@@ -24,4 +24,4 @@ Rey Urquiza - reiiurquiza@gmail.com
 
 Kevin Nguyen - johnnyblaze1999.sg@gmail.com
 
-Neidy Malaga -
+Neidy Malaga - neidymlg@gmail.com
